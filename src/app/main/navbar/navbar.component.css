@@ -1,0 +1,18 @@
+img.logo-as {
+  width: 3rem;
+}
+.bg-gradient-primary {
+  background-image: linear-gradient(180deg, #1E56A3 10%, #224abe 100%);
+  background-size: cover;
+}
+.bg-white.py-2.collapse-inner.rounded {
+  background-color: #ef8c0e !important;
+}
+
+a.collapse-item {
+  color: #fff !important;
+}
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
+  background-color: #00000010;
+}

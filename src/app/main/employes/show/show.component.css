@@ -1,0 +1,13 @@
+button.bi.bi-pencil-square.fa-sm.text-white-50 {
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  background-color: snow;
+  color: #1E56A3 !important;
+}
+button.bi.bi-trash3.fa-sm.text-white-50 {
+  font-size: 20px;
+  color: red !important;
+  background-color: snow;
+  border: none;
+}

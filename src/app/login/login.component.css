@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Set the container height to full viewport height */
+
+}
+
+form {
+  background-color: rgb(235, 242, 247);
+  padding:0 5% 5% 5%;
+  /* Add additional styles to your form if needed */
+  color: rgb(70, 70, 70);
+  font-weight: bolder;
+}
+img{
+  width: 300px;
+  height: 200px;
+}
+
+button.btn.btn-primary {
+  background-color: #1e56a3;
+  border: 0;
+}
+
+button.btn.btn-primary[_ngcontent-ng-c2418262837][_ngcontent-ng-c2418262837]:hover {
+  background-color: transparent;
+  border: solid 0.1rem;
+  color: #1e56a3;
+}
+
+.form-check {
+  display: grid;
+  min-height: 1.5rem;
+  padding-left: 0;
+}
+
+a.forgot-password-link {
+  text-decoration: none;
+  margin-top: 5%;
+  color: #1e56a3;
+  font-weight: 400;
+}
