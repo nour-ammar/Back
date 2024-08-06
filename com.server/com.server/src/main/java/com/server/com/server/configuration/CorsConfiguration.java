@@ -2,12 +2,11 @@ package com.server.com.server.configuration;
 
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.core.parameters.P;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class CorsConfiguration {
+public class CorsConfiguration implements WebMvcConfigurer{
 
 
     private static final String GET = "GET";
@@ -15,17 +14,15 @@ public class CorsConfiguration {
     private static final String PUT = "PUT";
     private static final String DELETE = "DELETE";
 
-    public WebMvcConfigurer corsConfigurer(){
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
+    private static final String PATCH = "PATCH";
+
+   public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedMethods(GET,PUT, POST,DELETE)
+                        .allowedMethods(GET,PUT, POST,DELETE,PATCH)
                         .allowedHeaders("*")
                         .allowedOriginPatterns("*")
                         .allowCredentials(true)
                         ;
-            }
+
         };
-    }
 }
